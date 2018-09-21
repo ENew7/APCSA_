@@ -1,4 +1,4 @@
-//� A+ Computer Science  -  www.apluscompsci.com
+//This is a test
 
 //this example demonstrates how to to use a
 //while loop to sum all of the digits of a number
