@@ -31,14 +31,34 @@ public class BallRunner
     }
     public static void act2Runner(){
         BallWorld ballWorld = new BallWorld(750, 750);
-        TGPoint tgpoint = new TGPoint((int)(Math.random())*100)+1,(int)(Math.random())*100;
+        TGPoint tgpoint = new TGPoint(Math.random()*100, Math.random()*100);
         BallBot[] ballArray = new BallBot[10];
         BallRunner ballRunner = new BallRunner();
         while(true){
             for(int i = 0; i < ballArray.length; i++){
-                int x = (int)(Math.random
+                if(ballRunner.findFreeBallBotIndex(ballArray) < ballArray.length){
+                   BallBot ballBot = new BallBot(ballWorld, tgpoint, Math.random()*360, 25);
+                   ballArray[i] = ballBot;
+                }
+                if(ballArray[i]!=null){
+                    if(ballArray[i].canMoveForward(ballWorld) == true){
+                        ballArray[i].moveForward();
+                    }
+                    else{
+                        ballArray[i].setHeading(ballArray[i].getHeading()+90);
+                    }
+                }
             }
         }
         
+    }
+    public double distanceBetweenPoints(TGPoint point1, TGPoint point2){
+        return Math.sqrt(Math.pow(point1.x-point2.x,2.0)+(Math.pow(point1.y-point2.y,2.0)));
+    }
+    public boolean entranceClear (BallBot[] ballBotArray, TGPoint entrancePoint){
+        if(ballRunner.findFreeBallBotIndex(ballArray) < ballArray.length){
+            BallBot ballBot = new BallBot(ballWorld, tgpoint, Math.random()*360, 25);
+            ballArray[i] = ballBot;
+        }
     }
 }
