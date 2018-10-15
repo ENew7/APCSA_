@@ -7,10 +7,10 @@
  */
 public class GibberishRunner{
    public static void main(){
-       WordList5000 wordList5000 = new WordList5000();
+       WordList5000 wordlist5000 = new WordList5000();
        Gibberish gibberish = new Gibberish();
-       String[] gibberishString = makeGibberish(WordList5000 wordlist5000);
-       System.out.println(gibberishString[]);
+       String gibberishString = gibberish.makeGibberish(wordlist5000);
+       System.out.println(gibberishString);
     }
    
 }

@@ -2,20 +2,27 @@
 /**
  * Write a description of class Gibberish here.
  *
- * @author (your name)
- * @version (a version number or a date)
+ * @author Edward Newell
+ * @version 10/15
  */
 public class Gibberish
 {
+    private String sourceString;
     public Gibberish(){
         Template template = new Template();
-        String sourceString = template.getSourceString();
+        sourceString = template.getSourceString();
     }
-    public String makeGibberish(WordList5000 wordlist5000){
+    public String makeGibberish(WordList5000 wordList5000){
         int currentSourceIndex = 0;
         String resultString = " ";
-        while(currentSourceIndex < sourceString.length()){
-            
+        while(sourceString.contains("<")){
+            int beginning = sourceString.indexOf("<");
+            if(sourceString.indexOf("<t>") == beginning){
+                int end = sourceString.indexOf("</>");
+                if(wordList5000.getRandomWordString("t") != null){
+                    
+                }
+            }
         }
     }
 }

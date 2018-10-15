@@ -1,10 +1,14 @@
 #BlueJ class context
 comment0.target=BallRunner
 comment0.text=\r\n\ Write\ a\ description\ of\ class\ BallRunner\ here.\r\n\r\n\ @author\ Edward\ Newell\r\n\ @version\ 9/19\r\n
-comment1.params=
-comment1.target=void\ run()
-comment2.params=ballBotArray
-comment2.target=int\ findFreeBallBotIndex(BallBot[])
-comment3.params=
-comment3.target=void\ act2Runner()
-numComments=4
+comment1.params=ballBotArray
+comment1.target=int\ findFreeBallBotIndex(BallBot[])
+comment2.params=point1\ point2
+comment2.target=double\ distanceBetweenPoints(TGPoint,\ TGPoint)
+comment3.params=ballBotArray\ entrancePoint
+comment3.target=boolean\ entranceClear(BallBot[],\ TGPoint)
+comment4.params=
+comment4.target=void\ codeRunner()
+comment5.params=ballBot\ ballBotArray
+comment5.target=BallBot\ ballBotToBounceOff(BallBot,\ BallBot[])
+numComments=6
