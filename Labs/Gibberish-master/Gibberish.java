@@ -22,6 +22,9 @@ public class Gibberish
                 if(wordList5000.getRandomWordString("t") != null){
                     
                 }
+                else if(wordList5000.getRandomWordString("t") != null){
+                    
+                }
             }
         }
     }
