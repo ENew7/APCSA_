@@ -18,7 +18,7 @@ public class MagpieRunner2
 		System.out.println (maggie.getGreeting());
 		Scanner in = new Scanner (System.in);
 		String statement = in.nextLine();
-		
+		//ends the code when "Bye" is siad 
 		while (!statement.equals("Bye"))
 		{
 			System.out.println (maggie.getResponse(statement));
