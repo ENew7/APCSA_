@@ -45,5 +45,7 @@ public class Student
     public void setGpa(double num){
         gpa = num;
     }
-    public void set
+    public void setStuNumber(int num){
+        stuNumber = num;
+    }
 }

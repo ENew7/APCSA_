@@ -7,5 +7,10 @@
  */
 public class StudentList
 {
-   
+   //addStudent()
+//deleteStudent()
+//editStudentList()
+//clearList() 
+//printList()
+//printStudent()
 }
