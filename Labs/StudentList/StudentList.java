@@ -1,4 +1,4 @@
-
+import java.util.*;
 /**
  * Write a description of class StudentList here.
  *
@@ -7,10 +7,14 @@
  */
 public class StudentList
 {
-   //addStudent()
-//deleteStudent()
-//editStudentList()
-//clearList() 
-//printList()
-//printStudent()
+   ArrayList<Student> students = new ArrayList<Student>();
+   
+   public void addStudent(String str){
+       students.add(str);
+   }
+   //deleteStudent()
+   //editStudentList()
+   //clearList() 
+   //printList()
+   //printStudent()
 }
