@@ -1,4 +1,4 @@
-
+import java.util.*;
 /**
  * Write a description of class StudentListRunner here.
  *
@@ -8,7 +8,8 @@
 public class StudentListRunner
 {
     StudentList studentList = new StudentList();
-    public void menuNumber(){
-        
+    public static void main(){
+        StudentList studListObj = new StudentList();
+        studListObj.addStudent();
     }
 }

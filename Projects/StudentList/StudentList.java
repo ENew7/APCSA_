@@ -10,7 +10,11 @@ public class StudentList
    ArrayList<Student> students = new ArrayList<Student>();
    
    public void addStudent(String str){
-       students.add(str);
+       System.out.print(str);
+       Student s = new Student(str);
+       
+       
+       students.add(s);
    }
    //deleteStudent()
    //editStudentList()
