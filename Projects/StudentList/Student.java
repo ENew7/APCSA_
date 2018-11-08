@@ -14,9 +14,12 @@ public class Student
     private int stuNumber = 0;
     private double gpa = 0.0;
     //constructor
-    public Student(String str){
+    public Student(String str, int num, double dub){
         fullName = str;
         parseName(fullName);
+        setStuNumber(num);
+        setGpa(dub);
+        
     }
     //getters
     public void parseName(String str){

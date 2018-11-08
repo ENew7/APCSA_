@@ -7,16 +7,17 @@ import java.util.*;
  */
 public class StudentList
 {
-   ArrayList<Student> students = new ArrayList<Student>();
+   public ArrayList<Student> students = new ArrayList<Student>();
    
-   public void addStudent(String str){
+   public void addStudent(String str, int num, double dub){
        System.out.print(str);
-       Student s = new Student(str);
-       
-       
+       Student s = new Student(str, num, dub);
+
        students.add(s);
    }
-   //deleteStudent()
+   public void deleteStudent(){
+    
+   }
    //editStudentList()
    //clearList() 
    //printList()
