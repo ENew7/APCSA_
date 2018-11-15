@@ -1,5 +1,3 @@
-package pixLab.classes;
-
 import javax.imageio.ImageIO;
 import java.awt.image.BufferedImage;
 import javax.swing.ImageIcon;
