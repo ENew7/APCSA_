@@ -24,4 +24,17 @@ public class Cell
     public int getInt(){
         return x;
     }
+    
+    public Cell[] getNeighbors(){
+        return  neighbors;
+    }
+    public int getNeighborSum(){
+        int sum = 0;
+        for(int i = 0; i < neighbors.length; i++){
+           if(neighbors[i] != null){
+               sum += neighbors[i].getInt();
+           }
+        }
+        return sum;
+    }
 }

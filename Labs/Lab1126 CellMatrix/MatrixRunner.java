@@ -11,6 +11,6 @@ public class MatrixRunner{
       CellMatrix cm = new CellMatrix(3, 4);  
       cm.loadMatrix();
       cm.printMatrix();
-      
+      System.out.println(cm.getGreatestNeighbors());
     }
 }
