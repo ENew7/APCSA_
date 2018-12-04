@@ -20,13 +20,13 @@ public class Picture extends SimplePicture
   /**
    * Constructor that takes no arguments 
    */
-  public Picture ()
+  //public Picture ()
   {
     /* not needed but use it to show students the implicit call to super()
      * child constructors always call a parent constructor 
      */
-    super();  
-  }
+   // super();  
+  //}
   
   /**
    * Constructor that takes a file name and creates the picture 
