@@ -11,26 +11,26 @@ public class PictureTester
   /** Method to test zeroBlue */
   public static void testZeroBlue()
   {
-    Picture beach = new Picture("beach.jpg");
+    Picture beach = new Picture("Doofenshmirtz_Portrait.jpg");
     beach.explore();
     beach.zeroBlue();
     beach.explore();
   }
   public static void testKeepOnlyBlue()
   {
-    Picture beach = new Picture("beach.jpg");
+    Picture beach = new Picture("Doofenshmirtz_Portrait.jpg");
     beach.explore();
     beach.keepOnlyBlue();
     beach.explore();
   }
   public static void testNegate(){
-    Picture beach = new Picture("beach.jpg");
+    Picture beach = new Picture("Doofenshmirtz_Portrait.jpg");
     beach.explore();
     beach.negate();
     beach.explore();
   }
   public static void testGrayscale(){
-    Picture beach = new Picture("beach.jpg");
+    Picture beach = new Picture("Doofenshmirtz_Portrait.jpg");
     beach.explore();
     beach.grayscale();
     beach.explore();
@@ -43,7 +43,13 @@ public class PictureTester
     caterpillar.mirrorVertical();
     caterpillar.explore();
   }
-  
+  public static void testMirrorVerticalRightToLeft()
+  {
+    Picture caterpillar = new Picture("caterpillar.jpg");
+    caterpillar.explore();
+    caterpillar.mirrorVerticalRightToLeft();
+    caterpillar.explore();
+  }
   /** Method to test mirrorTemple */
   public static void testMirrorTemple()
   {
