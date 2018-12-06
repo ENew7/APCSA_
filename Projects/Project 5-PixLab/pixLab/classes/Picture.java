@@ -21,7 +21,7 @@ public class Picture extends SimplePicture
    * Constructor that takes no arguments 
    */
   //public Picture ()
-  {
+  //{
     /* not needed but use it to show students the implicit call to super()
      * child constructors always call a parent constructor 
      */
@@ -84,7 +84,16 @@ public class Picture extends SimplePicture
     return output;
     
   }
-  
+  //only blue
+  public void keepOnlyBlue(){
+      Pixel[][] pixels = this.getPixels2D();
+      for(Pixel[] rowArray : pixels){
+          for(Pixel pixObj : rowArray){
+              pixObj.setRed(0);
+              pixObj.setGreen(0);
+            }
+        }
+    }
   /** Method to set the blue to 0 */
   public void zeroBlue()
   {
@@ -97,7 +106,27 @@ public class Picture extends SimplePicture
       }
     }
   }
-  
+  public void negate(){
+      Pixel[][] pixels = this.getPixels2D();
+      for(Pixel[] rowArray : pixels){
+          for(Pixel pixObj : rowArray){
+              pixObj.setGreen(255 - (pixObj.getGreen()));
+              pixObj.setRed(255 - (pixObj.getRed()));
+              pixObj.setBlue(255 - (pixObj.getBlue()));
+            }
+        }
+    }
+    public void grayscale(){
+    Pixel[][] pixels = this.getPixels2D();
+    for (Pixel[] rowArray : pixels){
+        for (Pixel pixelObj : rowArray){
+            double average = ((pixelObj.getGreen()) + (pixelObj.getBlue())+ (pixelObj.getRed())) / 3.0;
+            pixelObj.setRed((int) average);
+            pixelObj.setGreen((int) average);
+            pixelObj.setBlue((int) average);
+        }
+    }
+  }
   /** Method that mirrors the picture around a 
     * vertical mirror in the center of the picture
     * from left to right */
