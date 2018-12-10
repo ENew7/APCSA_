@@ -1,6 +1,6 @@
 import java.util.*;
 /**
- * Runner class
+ * Game class
  *
  * @author Edward Newell
  * @version 1108
